@@ -12,7 +12,7 @@ page_html = job_page.text
 
 all_html = BeautifulSoup(page_html, "html.parser")
 
-all_listings = all_html.find_all("div", attrs = {"class":"bti-ui-job-result-detail-title"})
+all_listings = all_html.find_all("div", attrs = {"class":"bti-ui-job-details"})
 
 for a_link in all_listings:
 

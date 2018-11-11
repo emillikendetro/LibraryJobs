@@ -52,6 +52,6 @@ while page <= 300:
 
     json.dump(asist_urls,open('asist_urls.json','w'), indent=2)
 
-    json.dump(linkedin_urls,open('linkedin_urls.json','w'), indent=2)
+    json.dump(linkedin_urls,open('asist_linkedin_urls.json','w'), indent=2)
 
     time.sleep(1)
