@@ -7,6 +7,8 @@ page = 1
 
 asist_urls = []
 
+linkedin_urls = []
+
 while page <= 300:
 
     url = "https://asist-jobs.careerwebsite.com/jobs/?str=" + str(page) + "&max=100&vnet=0&long=1"
@@ -29,11 +31,11 @@ while page <= 300:
 
         if "http" in the_link:
 
-            linkedin_urls = []
+            bad_url = []
 
-            linkedin_urls = the_link
+            bad_url = the_link
 
-            linkedin_urls.append(the_link)
+            linkedin_urls.append(bad_url)
 
         if "http" not in the_link:
             the_link = "https://asist-jobs.careerwebsite.com" + the_link
