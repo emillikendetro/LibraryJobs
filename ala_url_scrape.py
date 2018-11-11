@@ -42,4 +42,4 @@ while page <= 300:
 
     json.dump(ala_urls,open('ala_urls.json','w'), indent=2)
 
-    #time.sleep(1)
+    time.sleep(1)
