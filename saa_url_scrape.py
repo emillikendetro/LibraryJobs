@@ -4,29 +4,35 @@ import requests, time, json
 
 saa_urls = []
 
-url = "http://careers.archivists.org/jobs/"
+page = 1
 
-job_page = requests.get(url)
+while page <= 2:
 
-page_html = job_page.text
+    url = "http://careers.archivists.org/jobs/"
 
-all_html = BeautifulSoup(page_html, "html.parser")
+    job_page = requests.get(url)
 
-all_listings = all_html.find_all("div", attrs = {"class":"bti-ui-job-details"})
+    page_html = job_page.text
 
-for a_link in all_listings:
+    all_html = BeautifulSoup(page_html, "html.parser")
 
-    the_a_link = a_link.find("a")
+    all_listings = all_html.find_all("div", attrs = {"class":"bti-ui-job-details"})
 
-    the_link = the_a_link["href"]
+    for a_link in all_listings:
 
-    the_link = "http://careers.archivists.org" + the_link
+        the_a_link = a_link.find("a")
 
-    job_url = []
+        the_link = the_a_link["href"]
 
-    job_url = the_link
+        the_link = "http://careers.archivists.org" + the_link
 
-    saa_urls.append(job_url)
+        job_url = []
+
+        job_url = the_link
+
+        saa_urls.append(job_url)
+
+        page = page + 1
 
 json.dump(saa_urls,open('saa_urls.json','w'), indent=2)
 
