@@ -9,8 +9,13 @@ I first scraped the websites for links to detailed job postings and stored the U
 
 For this project I used five modules:
 
-1. Requests - An HTTP library that provides a shortcut for making HTML requests
-2. Beautiful Soup - Helps with searching and pulling data from websites structured with HTML or XML
-3. JSON - Used to create and edit .json file types
-4. Time - Used to add time between executions of the code
-5. Re - (Regular expressions) Tool to search and edit data
+1. Requests  
+An HTTP library that provides a shortcut for making HTML requests
+2. Beautiful Soup  
+Helps with searching and pulling data from websites structured with HTML or XML
+3. JSON  
+Used to create and edit .json file types
+4. Time  
+Used to add time between executions of the code
+5. Re  
+(Regular expressions) Tool to search and edit data
