@@ -1,5 +1,5 @@
 # Scraping for Library Jobs
-For this project, I used Python to scrape job listings from three popular professional associations' websites:
+For this project, I used Python to attempt to scrape job listings from three popular professional associations' websites:
 
 1. Society of American Archivists (SAA)
 2. American Library Association (ALA)
