@@ -5,7 +5,7 @@ For this project, I used Python to attempt to scrape job listings from three pop
 2. American Library Association (ALA)
 3. Association for Information Science and Technology (ASIS&T)  
 
-I first scraped the websites for links to detailed job postings and stored the URLs in a JSON file. Then I scraped each detailed job page (with different code to suit each websites' format), and saved this data in a JSON file. I successfully scraped the ASIS&T and ALA websites, but couldn't scrape the SAA website, so my dataset only includes jobs from the last two professional associations.
+I first scraped the websites for links to detailed job postings and stored the URLs in a JSON file. Then I scraped each detailed job page (with different code to suit each websites' format), and saved this data in a JSON file. I successfully scraped the ASIS&T and ALA websites, but couldn't scrape the SAA website, so my dataset only includes jobs from the last two professional associations. Lastly, I compiled the ASIS&T and ALA jobs into one JSON file (master_jobs_list.json).
 
 For this project I used four modules:
 
