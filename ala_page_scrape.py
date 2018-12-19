@@ -30,12 +30,11 @@ for url in links:
         #find 'span' in html
         info = catagory.find("span")
         #use label and info to create dictionary content
-        ala_job[label.text] = info.text
+        ala_job[label.text.strip(": ")] = info.text.strip()
+    #only add job listing to json file if it isn't already there
+    if ala_job not in ala_job_list:
+        ala_job_list.append(ala_job)
 
-        # ala_job.append(ala_item)
-        # print("Working on" + ala_item)
-
-    ala_job_list.append(ala_job)
     json.dump(ala_job_list, open('ala_job_list.json','w'), indent=2)
 
 
